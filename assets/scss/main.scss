@@ -2,21 +2,24 @@
 
 
 // Settings
-
+@import 'settings/colors';
+@import 'settings/fonts';
 
 // Tools
 
 
 // Generic
+@import 'generic/shared';
 
 
 // Elements
-
+@import 'elements/body';
 
 // Objects
 
 
 // Components
+@import 'components/c-header';
 
 
 // Utilities
