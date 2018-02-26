@@ -1,0 +1,23 @@
+.o-container {
+  padding: 0 20px;
+} 
+
+@include breakpoint(medium) {
+  .o-container {
+    max-width: 650px;
+    padding: 0;
+    margin: 0 auto;
+  }
+}
+
+@include breakpoint(large) {
+  .o-container {
+    max-width: 900px;
+  }
+}
+
+@include breakpoint (1360px) {
+  .o-container {
+    max-width: 1100px;
+  }
+}

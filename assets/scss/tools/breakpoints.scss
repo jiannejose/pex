@@ -1,0 +1,29 @@
+@mixin breakpoint($size, $sizeMax: '') {
+  @if $size == 'small' {
+      $size: '425px';
+  } @else if $size == 'medium' {
+      $size: '768px';
+  } @else if $size == 'large' {
+      $size: '1024px';
+  }
+
+  @if $sizeMax != '' {
+    @if $sizeMax == 'small' {
+        $sizeMax: '425px';
+    } @else if $sizeMax == 'medium' {
+        $sizeMax: '768px';
+    } @else if $sizeMax == 'large' {
+        $sizeMax: '1024px';
+    }
+  }
+
+  @if $sizeMax != '' {
+    @media all and (min-width: $size) and (max-width: $sizeMax) {
+        @content;
+    }
+  } @else {
+    @media all and (min-width: $size) {
+        @content;
+    }
+  }
+}
