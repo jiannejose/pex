@@ -122,4 +122,50 @@ body {
   .c-header__title {
     font-size: 40px; } }
 
+.c-nav {
+  padding: 40px 20px;
+  position: relative; }
+
+@media all and (min-width: 768px) {
+  .c-nav {
+    padding: 40px 0; } }
+
+/*** LOGO ***/
+.c-nav__logo {
+  width: 190px;
+  height: auto;
+  line-height: 0;
+  display: flex; }
+
+.c-nav__logo-text {
+  font-size: 10px;
+  font-weight: 700;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.5em;
+  padding-left: 10px; }
+
+/*** BURGER ***/
+.c-nav__burger {
+  position: absolute;
+  top: 35px;
+  right: 20px; }
+
+.c-nav__burger span {
+  width: 25px;
+  height: 3px;
+  background-color: #ffffff;
+  margin-top: 3px;
+  display: block; }
+
+@media all and (min-width: 768px) {
+  .c-nav__burger {
+    right: 0; } }
+
+/*** BORDER ***/
+.c-nav__border {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.3); }
+
 /*# sourceMappingURL=maps/styles.css.map */

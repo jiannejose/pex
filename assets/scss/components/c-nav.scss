@@ -1,0 +1,60 @@
+.c-nav {
+  padding: 40px 20px;
+  position: relative;
+}
+
+@include breakpoint(medium) {
+  .c-nav {
+    padding: 40px 0;
+  }
+}
+
+/*** LOGO ***/
+
+.c-nav__logo {
+  width: 190px;
+  height: auto;
+  line-height: 0;
+  display: flex;
+}
+
+.c-nav__logo-text {
+  font-size: $font-xs;
+  font-weight: 700;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.5em;
+  padding-left: 10px;
+}
+
+
+/*** BURGER ***/
+.c-nav__burger {
+  position: absolute;
+  top: 35px;
+  right: 20px;
+
+  span {
+    width: 25px;
+    height: 3px;
+    background-color: $white-900;
+    margin-top: 3px;
+    display: block;
+  }
+}
+
+@include breakpoint(medium) {
+  .c-nav__burger {
+    right: 0;
+  }
+}
+
+
+/*** BORDER ***/
+.c-nav__border {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+
