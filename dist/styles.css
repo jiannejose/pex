@@ -130,6 +130,9 @@ body {
   .c-nav {
     padding: 40px 0; } }
 
+/******************
+  NAV: FIRST PART 
+******************/
 /*** LOGO ***/
 .c-nav__logo {
   width: 190px;
@@ -146,12 +149,12 @@ body {
   padding-left: 10px; }
 
 /*** BURGER ***/
-.c-nav__burger {
+.c-nav__burger, .c-nav__close {
   position: absolute;
   top: 35px;
   right: 20px; }
 
-.c-nav__burger span {
+.c-nav__burger span, .c-nav__close span {
   width: 25px;
   height: 3px;
   background-color: #ffffff;
@@ -159,13 +162,90 @@ body {
   display: block; }
 
 @media all and (min-width: 768px) {
-  .c-nav__burger {
+  .c-nav__burger, .c-nav__close {
     right: 0; } }
+
+@media all and (min-width: 1024px) {
+  .c-nav__burger, .c-nav__close {
+    display: none; } }
 
 /*** BORDER ***/
 .c-nav__border {
   width: 100%;
   height: 1px;
   background-color: rgba(255, 255, 255, 0.3); }
+
+/******************
+  NAV: SECOND PART 
+******************/
+.c-nav__main {
+  width: 90%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: -90%;
+  background-color: rgba(38, 52, 70, 0.8);
+  z-index: 10;
+  transition: all 300ms ease-in-out; }
+
+.c-nav__main--open {
+  right: 0; }
+
+@media all and (min-width: 1024px) {
+  .c-nav__main {
+    background-color: transparent; } }
+
+/*** CLOSE TOGGLE ***/
+.c-nav__close span:first-child {
+  transform: rotate(45deg);
+  margin-top: 9px; }
+
+.c-nav__close span:nth-child(2) {
+  transform: rotate(-45deg);
+  margin-top: -3px; }
+
+@media all and (min-width: 768px) {
+  .c-nav__close {
+    right: 60px; } }
+
+/*** SEARCH ***/
+.c-nav__search {
+  width: 80%;
+  height: auto;
+  margin: 0 auto; }
+
+.c-nav__search-container {
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 50px;
+  display: flex;
+  padding: 10px 30px;
+  margin: 100px auto 50px; }
+
+.c-nav__search-container input {
+  width: calc(100% - 22px);
+  border: none; }
+
+.c-nav__search-container a {
+  color: #babbc4;
+  padding-left: 10px; }
+
+/*** NAV MENU ***/
+.c-nav__menu {
+  width: 80%;
+  margin: 0 auto; }
+
+.c-nav__menu ul {
+  list-style: none;
+  padding-left: 0; }
+
+.c-nav__menu li {
+  padding: 15px 0; }
+
+.c-nav__menu a {
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffffff;
+  text-decoration: none; }
 
 /*# sourceMappingURL=maps/styles.css.map */
