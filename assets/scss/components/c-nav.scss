@@ -1,3 +1,7 @@
+nav {
+  position: relative;
+}
+
 .c-nav {
   padding: 35px 0;
   position: relative;
@@ -54,6 +58,10 @@
     margin-top: 3px;
     display: block;
   }
+}
+
+.c-nav__burger--remove {
+  display: none;
 }
 
 @include breakpoint(large) {
