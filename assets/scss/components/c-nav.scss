@@ -1,11 +1,18 @@
 .c-nav {
-  padding: 40px 20px;
+  padding: 35px 0;
   position: relative;
 }
 
 @include breakpoint(medium) {
   .c-nav {
-    padding: 40px 0;
+    padding: 35px 0;
+  }
+}
+
+@include breakpoint(large) {
+  .c-nav {
+    width: 25%;
+    display: inline-block;
   }
 }
 
@@ -30,12 +37,15 @@
   padding-left: 10px;
 }
 
+.c-nav__logo:hover {
+  cursor: pointer;
+}
 
 /*** BURGER ***/
 .c-nav__burger {
   position: absolute;
   top: 35px;
-  right: 20px;
+  right: 0;
 
   span {
     width: 25px;
@@ -46,24 +56,10 @@
   }
 }
 
-@include breakpoint(medium) {
-  .c-nav__burger {
-    right: 0;
-  }
-}
-
 @include breakpoint(large) {
   .c-nav__burger {
     display: none;
   }
-}
-
-
-/*** BORDER ***/
-.c-nav__border {
-  width: 100%;
-  height: 1px;
-  background-color: rgba(255, 255, 255, 0.3);
 }
 
 
@@ -87,13 +83,29 @@
 
 @include breakpoint(large) {
   .c-nav__main {
+    width: 65%;
+    height: auto;
+    right: 0;
     background-color: transparent;
+    display: flex;
+    flex-direction: row-reverse;
+    transition: none;
+    margin-right: 25px;
   }
 }
+
+@include breakpoint(1440px) {
+  .c-nav__main {
+    width: 50%;
+    margin-right: 40px;
+  }
+}
+
 
 /*** CLOSE TOGGLE ***/
 .c-nav__close {
   @extend .c-nav__burger;
+  right: 20px;
 
   span:first-child {
     transform: rotate(45deg);
@@ -124,7 +136,7 @@
   background-color: $white-900;
   border-radius: 50px;
   display: flex;
-  padding: 10px 30px;
+  padding: 8px 25px;
   margin: 100px auto 50px;
 
   input {
@@ -135,6 +147,29 @@
   a {
     color: #babbc4;
     padding-left: 10px;
+    transition: color 300ms ease;
+  }
+}
+
+.c-nav__search-container a:hover {
+  color: $blue900-transparent;
+}
+
+@include breakpoint(medium) {
+  .c-nav__search {
+    width: 50%;
+  }
+}
+
+@include breakpoint(large) {
+  .c-nav__search {
+    width: 35%;
+    margin: 25px 0;
+  }
+
+  .c-nav__search-container {
+    width: 235px;
+    margin: 0;
   }
 }
 
@@ -158,4 +193,35 @@
     color: $white-900;
     text-decoration: none;    
   }
+}
+
+@include breakpoint(large) {
+  .c-nav__menu {
+    width: 395px;
+    display: inline-block;
+    margin: 0;
+
+    ul {
+      display: flex;
+    }
+
+    li {
+      line-height: 1em;
+      padding: 35px 20px 0;
+    }
+
+    a {
+      font-size: $font-xs;
+      padding-bottom: 36px;
+      transition: border 200ms ease;
+    }
+  }
+
+  .c-nav__menu {
+    a:hover {
+      border-bottom: 3px solid $white-900;
+      cursor: pointer;
+    }
+  }
+
 }

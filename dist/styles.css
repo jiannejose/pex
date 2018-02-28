@@ -46,6 +46,13 @@ body {
   background-color: transparent;
   color: #ffffff; }
 
+.o-border {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.1);
+  position: absolute;
+  top: 90px; }
+
 .c-header {
   width: 100%;
   height: 100vh;
@@ -123,12 +130,17 @@ body {
     font-size: 40px; } }
 
 .c-nav {
-  padding: 40px 20px;
+  padding: 35px 0;
   position: relative; }
 
 @media all and (min-width: 768px) {
   .c-nav {
-    padding: 40px 0; } }
+    padding: 35px 0; } }
+
+@media all and (min-width: 1024px) {
+  .c-nav {
+    width: 25%;
+    display: inline-block; } }
 
 /******************
   NAV: FIRST PART 
@@ -148,11 +160,14 @@ body {
   line-height: 1.5em;
   padding-left: 10px; }
 
+.c-nav__logo:hover {
+  cursor: pointer; }
+
 /*** BURGER ***/
 .c-nav__burger, .c-nav__close {
   position: absolute;
   top: 35px;
-  right: 20px; }
+  right: 0; }
 
 .c-nav__burger span, .c-nav__close span {
   width: 25px;
@@ -161,19 +176,9 @@ body {
   margin-top: 3px;
   display: block; }
 
-@media all and (min-width: 768px) {
-  .c-nav__burger, .c-nav__close {
-    right: 0; } }
-
 @media all and (min-width: 1024px) {
   .c-nav__burger, .c-nav__close {
     display: none; } }
-
-/*** BORDER ***/
-.c-nav__border {
-  width: 100%;
-  height: 1px;
-  background-color: rgba(255, 255, 255, 0.3); }
 
 /******************
   NAV: SECOND PART 
@@ -193,9 +198,24 @@ body {
 
 @media all and (min-width: 1024px) {
   .c-nav__main {
-    background-color: transparent; } }
+    width: 65%;
+    height: auto;
+    right: 0;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row-reverse;
+    transition: none;
+    margin-right: 25px; } }
+
+@media all and (min-width: 1440px) {
+  .c-nav__main {
+    width: 50%;
+    margin-right: 40px; } }
 
 /*** CLOSE TOGGLE ***/
+.c-nav__close {
+  right: 20px; }
+
 .c-nav__close span:first-child {
   transform: rotate(45deg);
   margin-top: 9px; }
@@ -219,7 +239,7 @@ body {
   background-color: #ffffff;
   border-radius: 50px;
   display: flex;
-  padding: 10px 30px;
+  padding: 8px 25px;
   margin: 100px auto 50px; }
 
 .c-nav__search-container input {
@@ -228,7 +248,23 @@ body {
 
 .c-nav__search-container a {
   color: #babbc4;
-  padding-left: 10px; }
+  padding-left: 10px;
+  transition: color 300ms ease; }
+
+.c-nav__search-container a:hover {
+  color: rgba(38, 52, 70, 0.8); }
+
+@media all and (min-width: 768px) {
+  .c-nav__search {
+    width: 50%; } }
+
+@media all and (min-width: 1024px) {
+  .c-nav__search {
+    width: 35%;
+    margin: 25px 0; }
+  .c-nav__search-container {
+    width: 235px;
+    margin: 0; } }
 
 /*** NAV MENU ***/
 .c-nav__menu {
@@ -247,5 +283,23 @@ body {
   font-weight: 400;
   color: #ffffff;
   text-decoration: none; }
+
+@media all and (min-width: 1024px) {
+  .c-nav__menu {
+    width: 395px;
+    display: inline-block;
+    margin: 0; }
+  .c-nav__menu ul {
+    display: flex; }
+  .c-nav__menu li {
+    line-height: 1em;
+    padding: 35px 20px 0; }
+  .c-nav__menu a {
+    font-size: 10px;
+    padding-bottom: 36px;
+    transition: border 200ms ease; }
+  .c-nav__menu a:hover {
+    border-bottom: 3px solid #ffffff;
+    cursor: pointer; } }
 
 /*# sourceMappingURL=maps/styles.css.map */
