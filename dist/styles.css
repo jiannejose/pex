@@ -56,6 +56,20 @@ body {
   position: absolute;
   top: 90px; }
 
+.o-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding: 20px 0; }
+
+.o-paragraph {
+  font-size: 12px;
+  color: #ffffff;
+  padding-bottom: 30px;
+  line-height: 1.9em; }
+
 header {
   position: absolute;
   top: 0; }
@@ -314,5 +328,25 @@ nav {
   .c-nav__menu a:hover {
     border-bottom: 3px solid #ffffff;
     cursor: pointer; } }
+
+.c-about {
+  width: 100%;
+  height: 100%;
+  background-color: #2e3b4e; }
+
+.c-about__container {
+  max-width: 750px;
+  padding: 40px 0 60px;
+  margin: 0 auto; }
+
+@media all and (min-width: 768px) {
+  .c-about__container {
+    display: flex;
+    flex-wrap: wrap; }
+  .c-about__contents {
+    width: 45%;
+    max-width: 325px; }
+  .c-about__contents:nth-child(2n) {
+    margin-left: 10%; } }
 
 /*# sourceMappingURL=maps/styles.css.map */
