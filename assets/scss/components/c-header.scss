@@ -62,12 +62,6 @@
   margin: 0 0 30px;
 }
 
-.c-header__subtitle {
-  font-size: $font-xs;
-  letter-spacing: 0.05em;
-  margin-top: 20px;
-}
-
 @include breakpoint(450px) {
   
   .c-header .o-container {

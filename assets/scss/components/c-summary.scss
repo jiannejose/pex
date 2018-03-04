@@ -1,0 +1,17 @@
+.c-summary__image {
+  width: 100%;
+  height: auto;
+
+  img {
+    width: 100%;
+  }
+}
+
+.c-summary__contents {
+  padding: 0 20px;
+}
+
+.c-summary .o-paragraph,
+.c-summary .o-title {
+  color: $blue-800;
+} 

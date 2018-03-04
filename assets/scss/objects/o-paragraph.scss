@@ -1,7 +1,11 @@
 .o-paragraph {
-  font-size: $font-small;
+  font-size: $font-xs;
   font-weight: 400;
   color: $white-900;
   padding-bottom: 30px;
   line-height: 1.9em;
+}
+
+.o-paragraph--large {
+  font-size: $font-small;
 }
