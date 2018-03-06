@@ -443,6 +443,9 @@ body {
     top: 50%;
     position: relative; } }
 
+.c-subscribe__contents {
+  background-color: rgba(82, 26, 102, 0.6); }
+
 .u-flex-reverse {
   flex-direction: row-reverse; }
 
