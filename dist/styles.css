@@ -521,9 +521,6 @@ body {
     transform: none;
     left: 0; } }
 
-.u-flex-reverse {
-  flex-direction: row-reverse; }
-
 @media all and (min-width: 1024px) {
   .u-mr-60\@d {
     margin-right: 60px; }
