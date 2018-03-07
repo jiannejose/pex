@@ -2,6 +2,7 @@
   font-size: $font-xs;
   font-weight: 700;
   letter-spacing: 0.06em;
+  text-decoration: none;
   padding: 8px 30px;
   border-radius: 20px;
   box-shadow: inset 0 1px 0 rgba(255,255,255,0.5),
@@ -40,12 +41,14 @@
 .o-btn--transparent {
   background-color: transparent;
   color: $white-900;
+  border: 2px solid $white-900;
+  box-shadow: none;
   transition: all 300ms ease-out;
 }
 
 .o-btn--transparent:hover {
-  background-color: $white-900;
-  color: transparent;
+  background-color: $blue-800;
+  border: 2px solid $blue-800;
 }
 
 @include breakpoint(large) {

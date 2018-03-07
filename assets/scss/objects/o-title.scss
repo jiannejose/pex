@@ -15,6 +15,15 @@
   padding: 30px 0;
 }
 
+.o-title--huge {
+  font-size: $font-xxl;
+  font-weight: 700;
+  color: $white-900;
+  letter-spacing: -0.02em;
+  line-height: 1.3em;
+  padding: 20px 0;
+}
+
 @include breakpoint(medium) {
   .o-title--large {
     font-size: $font-large;
