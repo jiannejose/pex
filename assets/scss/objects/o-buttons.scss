@@ -1,29 +1,57 @@
 .o-btn {
-  font-size: $font-small;
+  font-size: $font-xs;
   font-weight: 700;
-  letter-spacing: 0.05em;
-
-  background-color: $purple-500;
-  color: $white-900;
-  padding: 10px 40px;
+  letter-spacing: 0.06em;
+  padding: 8px 30px;
   border-radius: 20px;
   box-shadow: inset 0 1px 0 rgba(255,255,255,0.5),
               inset 0 1px 0 rgba(0,0,0,0.25),
               inset 0 1px 0 rgba(255,255,255,0.2),
               0 1px 0 rgba(0,0,0,0.1);
+  transition: all 300ms ease-out;
+}
+
+.o-btn:hover {
+  cursor: pointer;
 }
 
 .o-btn--purple {
   background-color: $purple-500;
   color: $white-900;
+  transition: all 300ms ease-out;
+}
+
+.o-btn--purple:hover {
+  background-color: $white-900;
+  color: $purple-500;
 }
 
 .o-btn--peach {
   background-color: $white-900;
   color: $peach-500;
+  transition: all 300ms ease-out;
+}
+
+.o-btn--peach:hover {
+  background-color: $peach-500;
+  color: $white-900;
 }
 
 .o-btn--transparent {
   background-color: transparent;
   color: $white-900;
+  transition: all 300ms ease-out;
+}
+
+.o-btn--transparent:hover {
+  background-color: $white-900;
+  color: transparent;
+}
+
+@include breakpoint(large) {
+  .o-btn {
+    font-size: $font-small;
+    letter-spacing: 0.05em;
+    padding: 10px 40px;
+  }
 }
