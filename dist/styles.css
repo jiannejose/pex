@@ -554,6 +554,9 @@ body {
   padding-top: 200px;
   padding-bottom: 50px; }
 
+.c-photography__data {
+  max-width: 600px; }
+
 .c-photography__credit {
   display: flex;
   width: 100%; }
@@ -568,6 +571,15 @@ body {
   padding-left: 15px;
   padding-bottom: 0;
   line-height: 3.5em; }
+
+@media all and (min-width: 768px) {
+  .c-photography__image img {
+    width: 100%;
+    transform: none; } }
+
+@media all and (min-width: 1024px) {
+  .c-photography__contents {
+    padding-top: 300px; } }
 
 @media all and (min-width: 1024px) {
   .u-mr-60\@d {
