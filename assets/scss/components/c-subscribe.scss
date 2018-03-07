@@ -1,3 +1,67 @@
+.c-subscribe {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.c-subscribe__image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -10;
+
+  img {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+    transform: translateX(-50%);
+    left: 40%;
+    position: relative;
+  }
+}
+
 .c-subscribe__contents {
+  width: 100%;
+  height: 85%;
   background-color: $purple900-transparent;
+  margin-top: 70px;
+  display: inline-block;
+}
+
+.c-subscribe__data {
+  text-align: center;
+  padding: 100px 20px;
+  position: relative;
+}
+
+.c-subscribe .o-title--large {
+  padding-top: 0;
+  padding-bottom: 20px;
+}
+
+.c-subscribe .o-paragraph {
+  opacity: 0.5;
+  font-weight: 600;
+  padding-bottom: 70px;
+}
+
+.c-subscribe .o-subtitle {
+  font-weight: 700;
+}
+
+@include breakpoint(medium) {
+  .c-subscribe__data {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
+@include breakpoint(large) {
+  .c-subscribe__image img {
+    width: 100%;
+    transform: none;
+    left: 0;
+
+  }
 }
