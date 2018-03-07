@@ -1,0 +1,16 @@
+.c-footer {
+  height: 100%;
+  background-color: $blue-900;
+}
+
+.c-footer__contents {
+  max-width: 500px;
+  padding-top: 30px;
+  padding-bottom: 100px;
+}
+
+@include breakpoint(large) {
+  .c-footer__contents {
+    padding-bottom: 200px;
+  }
+}

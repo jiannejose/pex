@@ -590,6 +590,19 @@ body {
   padding-top: 80px;
   padding-bottom: 150px; }
 
+.c-footer {
+  height: 100%;
+  background-color: #263446; }
+
+.c-footer__contents {
+  max-width: 500px;
+  padding-top: 30px;
+  padding-bottom: 100px; }
+
+@media all and (min-width: 1024px) {
+  .c-footer__contents {
+    padding-bottom: 200px; } }
+
 @media all and (min-width: 1024px) {
   .u-mr-60\@d {
     margin-right: 60px; }
