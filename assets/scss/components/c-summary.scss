@@ -5,6 +5,7 @@
 .c-summary__image {
   width: 100%;
   position: relative;
+  line-height: 0;
 
   img {
     width: 100%;
@@ -27,7 +28,6 @@
   .c-summary__image {
     width: 50%;
     margin: 0 auto;
-    padding-top: 20px;
   }
 
   .c-summary__contents {
