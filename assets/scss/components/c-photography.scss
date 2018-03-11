@@ -5,14 +5,12 @@
 }
 
 .c-photography__image {
-  width: auto;
   height: 100%;
   position: absolute;
   top: 0;
   z-index: -1;
 
   img {
-    width: auto;
     height: 100%;
     object-fit: cover;
     transform: translateX(-33%);
@@ -54,6 +52,10 @@
 }
 
 @include breakpoint(large) {
+  .c-photography__image {
+    width: 100%;
+  }
+
   .c-photography__contents {
     padding-top: 300px;
   }

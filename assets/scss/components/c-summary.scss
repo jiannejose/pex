@@ -25,17 +25,6 @@
 } 
 
 @include breakpoint(medium) {
-  .c-summary__image {
-    width: 50%;
-    margin: 0 auto;
-  }
-
-  .c-summary__contents {
-    padding: 0 20px;
-  }
-}
-
-@include breakpoint(large) {
   .c-summary {
     display: flex;
   }
@@ -56,5 +45,19 @@
     transform: translateY(-50%);
     top: 50%;
     position: relative;
+  }
+}
+
+@include breakpoint(large) {
+  .c-summary__image {
+    width: 45%;
+    padding-top: 0;
+    margin: 0;
+  }
+
+  .c-summary__contents {
+    width: 55%;
+    max-width: 550px;
+    padding: 30px 0;
   }
 }
