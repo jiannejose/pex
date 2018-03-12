@@ -1,3 +1,9 @@
+@include breakpoint(medium) {
+  .u-mr-25\@t { margin-right: 25px; }
+
+  .u-ml-25\@t { margin-left: 25px; }
+}
+
 @include breakpoint(large) {
   .u-mr-60\@d { margin-right: 60px; }
   .u-mr-65\@d { margin-right: 65px; }
