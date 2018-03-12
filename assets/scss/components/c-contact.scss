@@ -7,4 +7,14 @@
   max-width: 300px;
   padding-top: 80px;
   padding-bottom: 150px;
+
+  a {
+   color: $white-900;
+   transition: all 300ms ease-out; 
+  }
+}
+
+.c-contact__contents a:hover {
+  color: $blue-800;
+  cursor: pointer;
 }
