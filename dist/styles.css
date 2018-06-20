@@ -139,7 +139,7 @@ body {
 .c-header__image img {
   width: auto;
   height: 100%;
-  transform: translateX(-50%);
+  transform: translateX(-45%);
   position: absolute;
   object-fit: cover; }
 
