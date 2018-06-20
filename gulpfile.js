@@ -5,8 +5,8 @@ const sass = require('gulp-sass');
 const rename = require('gulp-rename');
 const sourcemaps = require('gulp-sourcemaps');
 const babel = require('gulp-babel');
-var uglify = require('gulp-uglify');
-var pump = require('pump');
+const uglify = require('gulp-uglify');
+const pump = require('pump');
 const jsLibraries = ['./assets/js/jquery.min.js', './assets/js/parallax.min.js'];
 
 gulp.task('sass', function () {
@@ -21,8 +21,10 @@ gulp.task('sass', function () {
 });
 
 gulp.task('watch', function () {
+  gulp.start('copy-imgs');
   gulp.watch('./assets/scss/**/*.scss', ['sass']);
   gulp.watch('./assets/js/*.js', ['copy-js', 'js-compile']);
+  gulp.watch('./assets/img/*.png', ['copy-imgs']);
 });
 
 gulp.task('sass:prod', function () {
@@ -49,4 +51,9 @@ gulp.task('js-compile', function(cb) {
     uglify(),
     gulp.dest('./dist/js')
   ], cb);
+});
+
+gulp.task('copy-imgs', function() {
+  return gulp.src('./assets/img/*.png')
+  .pipe(gulp.dest('./dist/img/'));
 });
