@@ -14,11 +14,7 @@
 
             <!-- header start -->
             <header>
-                <div class="c-header">
-                    <div class="c-header__image">
-                        <img src="assets/img/layer25.png" alt="Hero Photo: Rock Mountain"/>
-                    </div> <!-- /c-header__image -->
-
+                <div class="c-header parallax-window" data-parallax="scroll" data-image-src="dist/img/layer25.png">
                     <div class="o-container">
                         <div class="c-header__contents">
                             <div class="c-header__title">
@@ -26,7 +22,7 @@
                             </div>
 
                             <div>
-                                <a class="o-btn o-btn--purple" href="#">Get Started Today</a>
+                                <a class="o-btn o-btn--purple" href="#photography" id="photographyBtn">Get Started Today</a>
                             </div> 
 
                             <div class="o-subtitle">
@@ -43,7 +39,7 @@
                 <div class="c-nav"> 
                     <a href="#" class="c-nav__logo">
                         <div class="c-nav__logo-image">
-                            <img src="../assets/img/Logo.png" alt="Logo Image" />
+                            <img src="dist/img/Logo.png" alt="Logo Image" />
                         </div>
 
                         <div class="c-nav__logo-text">
@@ -51,7 +47,7 @@
                         </div>
                     </a> <!-- /c-nav__logo -->
 
-                    <div class="c-nav__burger">
+                    <div class="c-nav__burger" id="openNav">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -59,8 +55,8 @@
 
                 </div> <!-- /c-nav -->
 
-                <div class="c-nav__main">
-                    <div class="c-nav__close">
+                <div class="c-nav__main" id="mainNav">
+                    <div class="c-nav__close" id="closeNav">
                         <span></span>
                         <span></span>
                     </div> <!-- /c-nav__close -->
@@ -78,23 +74,23 @@
                     <div class="c-nav__menu">
                         <ul>
                             <li>
-                                <a href="#">About</a>
+                                <a href="#about" class="nav-links" data-section-id="about">About</a>
                             </li>
 
                             <li>
-                                <a href="#">How it works</a>
+                                <a href="#how" class="nav-links" data-section-id="how">How it works</a>
                             </li>
 
                             <li>
-                                <a href="#">Services</a>
+                                <a href="#services" class="nav-links" data-section-id="services">Services</a>
                             </li>
 
                             <li>
-                                <a href="#">FAQ</a>
+                                <a href="#faq" class="nav-links" data-section-id="faq">FAQ</a>
                             </li>
 
                             <li>
-                                <a href="#">Contact</a>
+                                <a href="#contact" class="nav-links" data-section-id="contact">Contact</a>
                             </li>
                         </ul>
                     </div> <!-- /c-nav__menu -->
@@ -107,7 +103,7 @@
             <div class="o-border"></div>
 
             <!-- about start -->
-            <section class="c-about">
+            <section class="c-about" id="about">
                 <div class="o-container">
                     <div class="c-about__container">
                         <div class="c-about__contents">
@@ -144,11 +140,7 @@
 
             <!-- wicked start -->
             <section>
-                <div class="c-news">
-                    <div class="c-news__image">
-                        <img src="assets/img/trees.png" alt="Trees" />
-                    </div>
-
+                <div class="c-news parallax-window" data-parallax="scroll" data-image-src="dist/img/trees.png" id="how">
                     <div class="o-container">
                         <div class="c-news__contents">
                             <h3 class="o-title--large">Wicked & whack, bang bang boo!</h3>
@@ -170,7 +162,7 @@
             <section>
                 <div class="c-summary">
                     <div class="c-summary__image">
-                        <img src="assets/img/writing.png" alt="Writing" />
+                        <img src="dist/img/writing.png" alt="Writing" />
                     </div> <!-- /c-summary__image -->
 
                     <div class="c-summary__contents [ u-ml-25@t u-mr-65@d u-ml-60@d ]">
@@ -192,11 +184,7 @@
 
             <!-- subs start -->
             <section>
-                <div class="c-subscribe">
-                    <div class="c-subscribe__image">
-                        <img src="assets/img/layer12.png" alt="Valley" />
-                    </div> <!-- /c-subscribe__image -->
-
+                <div class="c-subscribe parallax-window" data-parallax="scroll" data-image-src="dist/img/layer12.png" id="services">
                     <div class="c-subscribe__contents">
                         <div class="c-subscribe__data">
                             <h3 class="o-title--large">Exprience the rush today</h3>
@@ -218,7 +206,7 @@
             <section>
                 <div class="c-photography">
                     <div class="c-photography__image">
-                        <img src="assets/img/layer27.png" alt="Eating" />
+                        <img src="dist/img/layer27.png" alt="Eating" />
                     </div> <!-- /c-photography__image -->
 
                     <div class="c-photography__contents o-container">
@@ -228,7 +216,7 @@
                             <h1 class="o-title--huge">Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
 
                             <a href="#" class="c-photography__credit">
-                                <img src="../assets/img/layer21.png" alt="Blaz Robar" />
+                                <img src="dist/img/layer21.png" alt="Blaz Robar" />
                                 <p class="o-paragraph">Blaz Robar, a God-like web designer</p>
                             </a> <!-- /c-photography__credit -->
                         </div>  <!-- /c-photography__data -->
@@ -239,7 +227,7 @@
 
             <!-- summary start -->
             <section>
-                <div class="c-summary [ u-df-jcfe@t ]">
+                <div class="c-summary [ u-df-jcfe@t ]" id="faq">
                     <div class="c-summary__contents [ u-mr-25@t u-mr-60@d u-ml-65@d ]">
                         <div class="c-summary__data">
                             <h6 class="o-title">A Heading is what you need here</h6>
@@ -255,7 +243,7 @@
                     </div> <!-- /c-summary__contents -->
 
                     <div class="c-summary__image">
-                        <img src="assets/img/layer26.png" alt="Arm with Watch" />
+                        <img src="dist/img/layer26.png" alt="Arm with Watch" />
                     </div> <!-- /c-summary__image -->
                 </div> <!-- /c-summary -->
             </section>
@@ -263,7 +251,7 @@
 
             <!-- contact start -->
             <section>
-                <div class="c-contact">
+                <div class="c-contact" id="contact">
                     <div class="o-container">
                         <div class="c-contact__contents">
                             <h6 class="o-title">Get in Touch</h6>
@@ -288,7 +276,10 @@
                 </div> <!-- /c-footer -->
             </section>
             <!-- footer end -->
-
         </main>
+
+        <script src="dist/js/jquery.min.js"></script>
+        <script src="dist/js/main.js"></script>
+        <script src="dist/js/parallax.min.js"></script>
     </body>
 </html>
