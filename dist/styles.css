@@ -135,13 +135,12 @@ body {
   height: 100%;
   position: absolute;
   z-index: -1; }
-
-.c-header__image img {
-  width: auto;
-  height: 100%;
-  transform: translateX(-45%);
-  position: absolute;
-  object-fit: cover; }
+  .c-header__image img {
+    width: auto;
+    height: 100%;
+    transform: translateX(-45%);
+    position: absolute;
+    object-fit: cover; }
 
 @media all and (min-width: 425px) {
   .c-header__image img {
@@ -150,8 +149,8 @@ body {
 @media all and (min-width: 768px) {
   .c-header__image {
     width: 100%; }
-  .c-header__image img {
-    width: 100%; } }
+    .c-header__image img {
+      width: 100%; } }
 
 .c-header .o-container {
   height: 100%;
@@ -247,22 +246,20 @@ nav {
 
 .c-nav__logo:hover {
   cursor: pointer; }
-
-.c-nav__logo:hover > .c-nav__logo-text {
-  color: #e7526b; }
+  .c-nav__logo:hover > .c-nav__logo-text {
+    color: #e7526b; }
 
 /*** BURGER ***/
 .c-nav__burger, .c-nav__close {
   position: absolute;
   top: 35px;
   right: 0; }
-
-.c-nav__burger span, .c-nav__close span {
-  width: 25px;
-  height: 3px;
-  background-color: #ffffff;
-  margin-top: 3px;
-  display: block; }
+  .c-nav__burger span, .c-nav__close span {
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff;
+    margin-top: 3px;
+    display: block; }
 
 .c-nav__burger--remove {
   display: none; }
@@ -306,14 +303,12 @@ nav {
 /*** CLOSE TOGGLE ***/
 .c-nav__close {
   right: 20px; }
-
-.c-nav__close span:first-child {
-  transform: rotate(45deg);
-  margin-top: 9px; }
-
-.c-nav__close span:nth-child(2) {
-  transform: rotate(-45deg);
-  margin-top: -3px; }
+  .c-nav__close span:first-child {
+    transform: rotate(45deg);
+    margin-top: 9px; }
+  .c-nav__close span:nth-child(2) {
+    transform: rotate(-45deg);
+    margin-top: -3px; }
 
 @media all and (min-width: 768px) {
   .c-nav__close {
@@ -332,17 +327,15 @@ nav {
   display: flex;
   padding: 8px 25px;
   margin: 100px auto 50px; }
-
-.c-nav__search-container input {
-  width: calc(100% - 22px);
-  border: none;
-  color: #2e3b4e;
-  letter-spacing: 0.03em; }
-
-.c-nav__search-container a {
-  color: #babbc4;
-  padding-left: 10px;
-  transition: color 300ms ease; }
+  .c-nav__search-container input {
+    width: calc(100% - 22px);
+    border: none;
+    color: #2e3b4e;
+    letter-spacing: 0.03em; }
+  .c-nav__search-container a {
+    color: #babbc4;
+    padding-left: 10px;
+    transition: color 300ms ease; }
 
 .c-nav__search-container a:hover {
   color: rgba(38, 52, 70, 0.95);
@@ -364,34 +357,31 @@ nav {
 .c-nav__menu {
   width: 80%;
   margin: 0 auto; }
-
-.c-nav__menu ul {
-  list-style: none;
-  padding-left: 0; }
-
-.c-nav__menu li {
-  padding: 15px 0; }
-
-.c-nav__menu a {
-  font-size: 18px;
-  font-weight: 400;
-  color: #ffffff;
-  text-decoration: none; }
+  .c-nav__menu ul {
+    list-style: none;
+    padding-left: 0; }
+  .c-nav__menu li {
+    padding: 15px 0; }
+  .c-nav__menu a {
+    font-size: 18px;
+    font-weight: 400;
+    color: #ffffff;
+    text-decoration: none; }
 
 @media all and (min-width: 1024px) {
   .c-nav__menu {
     width: 395px;
     display: inline-block;
     margin: 0; }
-  .c-nav__menu ul {
-    display: flex; }
-  .c-nav__menu li {
-    line-height: 1em;
-    padding: 35px 20px 0; }
-  .c-nav__menu a {
-    font-size: 10px;
-    padding-bottom: 36px;
-    transition: all 300ms ease-out; }
+    .c-nav__menu ul {
+      display: flex; }
+    .c-nav__menu li {
+      line-height: 1em;
+      padding: 35px 20px 0; }
+    .c-nav__menu a {
+      font-size: 10px;
+      padding-bottom: 36px;
+      transition: all 300ms ease-out; }
   .c-nav__menu a:hover {
     border-bottom: 3px solid #ffffff;
     cursor: pointer; } }
@@ -428,13 +418,12 @@ nav {
   position: absolute;
   top: 0;
   z-index: -1; }
-
-.c-news__image img {
-  width: auto;
-  height: 100%;
-  transform: translateX(-50%);
-  left: 50%;
-  position: relative; }
+  .c-news__image img {
+    width: auto;
+    height: 100%;
+    transform: translateX(-50%);
+    left: 50%;
+    position: relative; }
 
 .c-news__contents {
   max-width: 500px;
@@ -465,11 +454,10 @@ nav {
   width: 100%;
   position: relative;
   line-height: 0; }
-
-.c-summary__image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; }
+  .c-summary__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
 
 .c-summary__contents {
   height: auto;
@@ -516,14 +504,13 @@ nav {
   position: absolute;
   top: 0;
   z-index: -10; }
-
-.c-subscribe__image img {
-  width: auto;
-  height: 100%;
-  object-fit: cover;
-  transform: translateX(-50%);
-  left: 40%;
-  position: relative; }
+  .c-subscribe__image img {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+    transform: translateX(-50%);
+    left: 40%;
+    position: relative; }
 
 .c-subscribe__contents {
   width: 100%;
@@ -570,11 +557,10 @@ nav {
   position: absolute;
   top: 0;
   z-index: -1; }
-
-.c-photography__image img {
-  height: 100%;
-  object-fit: cover;
-  transform: translateX(-33%); }
+  .c-photography__image img {
+    height: 100%;
+    object-fit: cover;
+    transform: translateX(-33%); }
 
 .c-photography__contents {
   padding-top: 200px;
@@ -589,27 +575,23 @@ nav {
   max-width: 280px;
   text-decoration: none;
   transition: all 300ms ease-in-out; }
-
-.c-photography__credit img {
-  width: 40px;
-  height: 40px;
-  transform: scale(40px 40px);
-  object-fit: cover; }
-
-.c-photography__credit .o-paragraph {
-  font-weight: 700;
-  padding-left: 15px;
-  padding-bottom: 0;
-  line-height: 3.5em; }
+  .c-photography__credit img {
+    width: 40px;
+    height: 40px;
+    transform: scale(40px 40px);
+    object-fit: cover; }
+  .c-photography__credit .o-paragraph {
+    font-weight: 700;
+    padding-left: 15px;
+    padding-bottom: 0;
+    line-height: 3.5em; }
 
 .c-photography__credit:hover {
   cursor: pointer; }
-
-.c-photography__credit:hover > img {
-  transform: scale(45px, 45px); }
-
-.c-photography__credit:hover > .o-paragraph {
-  text-decoration: underline; }
+  .c-photography__credit:hover > img {
+    transform: scale(45px, 45px); }
+  .c-photography__credit:hover > .o-paragraph {
+    text-decoration: underline; }
 
 @media all and (min-width: 768px) {
   .c-photography__image img {
@@ -630,10 +612,9 @@ nav {
   max-width: 300px;
   padding-top: 80px;
   padding-bottom: 150px; }
-
-.c-contact__contents a {
-  color: #ffffff;
-  transition: all 300ms ease-out; }
+  .c-contact__contents a {
+    color: #ffffff;
+    transition: all 300ms ease-out; }
 
 .c-contact__contents a:hover {
   color: #2e3b4e;

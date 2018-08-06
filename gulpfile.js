@@ -4,6 +4,8 @@ const gulp = require('gulp');
 const sass = require('gulp-sass');
 const rename = require('gulp-rename');
 const sourcemaps = require('gulp-sourcemaps');
+const styleguide = require('sc5-styleguide');
+const outputPath = 'output';
 const babel = require('gulp-babel');
 const uglify = require('gulp-uglify');
 const pump = require('pump');
@@ -20,12 +22,34 @@ gulp.task('sass', function () {
     .pipe(gulp.dest('./dist/'));
 });
 
-gulp.task('watch', function () {
+gulp.task('styleguide:generate', function () {
+  return gulp.src('./assets/scss/**/*.scss')
+    .pipe(styleguide.generate({
+      title: 'My Styleguide',
+      server: true,
+      rootPath: outputPath,
+      overviewPath: 'ReadMe.md'
+    }))
+    .pipe(gulp.dest(outputPath));
+});
+
+gulp.task('styleguide:applystyles', function() {
+  return gulp.src('./assets/scss/main.scss')
+    .pipe(sass({
+      errLogToConsole: true
+    }))
+    .pipe(styleguide.applyStyles())
+    .pipe(gulp.dest(outputPath));
+});
+
+gulp.task('watch', ['styleguide'], function () {
   gulp.start('copy-imgs');
-  gulp.watch('./assets/scss/**/*.scss', ['sass']);
+  gulp.watch('./assets/scss/**/*.scss', ['sass', 'styleguide']);
   gulp.watch('./assets/js/*.js', ['copy-js', 'js-compile']);
   gulp.watch('./assets/img/*.png', ['copy-imgs']);
 });
+
+gulp.task('styleguide', ['styleguide:generate', 'styleguide:applystyles']);
 
 gulp.task('sass:prod', function () {
   return gulp.src('./assets/scss/main.scss')

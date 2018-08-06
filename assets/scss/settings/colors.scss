@@ -1,3 +1,13 @@
+// 1.1 Colors
+//
+// markup:
+// <div>
+//   <div style="background-color: $blue-800; width: 100%; padding: 20px 0; color: #ffffff; text-align: center; margin-bottom: 20px">blue-800</div>
+//   <div style="background-color: $blue-900; width: 100%; padding: 20px 0; color: #ffffff; text-align: center; margin-bottom: 20px">blue-900</div>
+//   <div style="background-color: $purple-500; width: 100%; padding: 20px 0; color: #ffffff; text-align: center; margin-bottom: 20px">purple-500</div>
+// </div>
+//
+// Styleguide 1.1
 $blue-800: #2e3b4e;
 $blue-900: #263446;
 $blue900-transparent: rgba(38, 52, 70, 0.95);
